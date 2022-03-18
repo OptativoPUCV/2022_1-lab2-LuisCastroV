@@ -12,3 +12,9 @@ list.c:33:3: error: expected ‘,’ or ‘;’ before ‘list’
    ^~~~
 Compilation failed
 824b013
+Fri Mar 18 14:34:37 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+8ec1fac
