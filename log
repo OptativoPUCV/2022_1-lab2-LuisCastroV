@@ -72,3 +72,13 @@ Fri Mar 18 15:04:15 UTC 2022:
  tests:  3|5
 total_score: 15/70
 18bd9bf
+Fri Mar 18 15:05:12 UTC 2022: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘lastList’:
+list.c:61:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+Compilation failed
+6c8093a
