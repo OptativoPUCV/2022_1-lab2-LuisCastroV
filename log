@@ -2,3 +2,13 @@ Fri Mar 18 14:15:00 UTC 2022:
  tests:  0|6
 total_score: 0/70
 dc200e4
+Fri Mar 18 14:33:47 UTC 2022: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:33:3: error: expected ‘,’ or ‘;’ before ‘list’
+   list->head=NULL;
+   ^~~~
+Compilation failed
+824b013
