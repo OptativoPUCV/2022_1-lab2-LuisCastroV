@@ -133,3 +133,8 @@ list.c:48:36: error: expected expression before ‘||’ token
                                     ^~
 Compilation failed
 8cc5181
+Fri Mar 18 15:15:28 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+5424581
