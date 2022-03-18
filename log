@@ -50,3 +50,13 @@ Fri Mar 18 14:59:14 UTC 2022:
  tests:  2|5
 total_score: 15/70
 c4a648f
+Fri Mar 18 15:00:15 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:48:18: error: expected ‘)’ before ‘!’ token
+   if(!list->head !! !list->tail){
+                  ^
+Compilation failed
+485195d
