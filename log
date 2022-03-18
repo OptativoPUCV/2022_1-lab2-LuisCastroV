@@ -18,3 +18,23 @@ Fri Mar 18 14:34:37 UTC 2022:
  tests:  1|5
 total_score: 10/70
 8ec1fac
+Fri Mar 18 14:48:48 UTC 2022: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:40:11: error: ‘List {aka struct List}’ has no member named ‘first’
+   if(!list->first){
+           ^~
+list.c:43:21: error: ‘List {aka struct List}’ has no member named ‘first’
+   list->current=list->first;
+                     ^~
+list.c:44:14: error: ‘List {aka struct List}’ has no member named ‘first’
+   return(list->first->data);
+              ^~
+list.c:45:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+6a62521
