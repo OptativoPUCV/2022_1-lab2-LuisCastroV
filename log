@@ -123,3 +123,13 @@ Fri Mar 18 15:13:57 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9eb7dd4
+Fri Mar 18 15:15:22 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:48:36: error: expected expression before ‘||’ token
+   if(!list->head || !list->tail || || !list->current){
+                                    ^~
+Compilation failed
+8cc5181
