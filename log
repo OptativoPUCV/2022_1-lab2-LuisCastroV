@@ -795,3 +795,9 @@ Sat Mar 19 22:06:08 UTC 2022:
  1 file changed, 7 insertions(+), 5 deletions(-)
  tests:  0|0
 7cad0b9
+Sat Mar 19 22:27:40 UTC 2022: 
+ list.c | 16 ++++------------
+ 1 file changed, 4 insertions(+), 12 deletions(-)
+ tests:  10|2
+total_score: 45/70
+58bd384
