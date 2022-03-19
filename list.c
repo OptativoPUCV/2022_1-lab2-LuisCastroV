@@ -94,25 +94,7 @@ void pushCurrent(List * list, void * data) {
   {
     list->head=n;
     list->tail=n;
-  }
-  else{
-    if(list->tail == list->current){
-      list->tail=n;
-      list->current->next=n;
-      n->prev=list->current;
     }
-    else{
-      n->prev=list->current;
-      list->current->next=n->next;
-      n->next=list->current->next;
-      list->current->prev=n;
-      
-      //list->current->next->prev=n;
-      //n->prev=list->current;   
-      //list->current->next=n; 
-      //n->next=list->current->next;     
-    }
-  }
 }
 
 void * popFront(List * list) {
