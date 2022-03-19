@@ -83,8 +83,8 @@ void pushFront(List * list, void * data) {
 }
 
 void pushBack(List * list, void * data) {
-  list->current = list->tail;
-  pushCurrent(list,data);
+    list->current = list->tail;
+    pushCurrent(list,data);
 }
 
 void pushCurrent(List * list, void * data) {
@@ -102,8 +102,8 @@ void pushCurrent(List * list, void * data) {
       n->prev=list->current;
     }
     else{
-      list->current->next=n;
       n->next=list->current->next;
+      list->current->next=n;
       list->current->next->prev=n;
       n->prev=list->current;
     }
