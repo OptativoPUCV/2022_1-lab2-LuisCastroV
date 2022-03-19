@@ -76,7 +76,10 @@ void pushFront(List * list, void * data) {
    }
    list->head = n;
    n->prev=NULL;
-   list->current=list->tail;
+  if(list->head==NULL){
+    n->current=NULL;
+  }
+  n->current=n->taiL;
 }
 
 void pushBack(List * list, void * data) {

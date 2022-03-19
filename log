@@ -219,3 +219,19 @@ Sat Mar 19 00:48:56 UTC 2022:
  tests:  9|3
 total_score: 35/70
 8f28103
+Sat Mar 19 01:06:07 UTC 2022: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:80:6: error: ‘Node {aka struct Node}’ has no member named ‘current’
+     n->current=NULL;
+      ^~
+list.c:82:4: error: ‘Node {aka struct Node}’ has no member named ‘current’
+   n->current=n->taiL;
+    ^~
+list.c:82:15: error: ‘Node {aka struct Node}’ has no member named ‘taiL’
+   n->current=n->taiL;
+               ^~
+Compilation failed
+9692963
