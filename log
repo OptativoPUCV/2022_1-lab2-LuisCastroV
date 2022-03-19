@@ -203,3 +203,13 @@ Sat Mar 19 00:42:33 UTC 2022:
  tests:  9|3
 total_score: 35/70
 41afc44
+Sat Mar 19 00:48:50 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:80:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+Compilation failed
+cedbdb1
