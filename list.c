@@ -102,7 +102,7 @@ void pushCurrent(List * list, void * data) {
       //en el tail te falta actualizarlo tipo si el nodo que agregaste es después del tail, ahora el tail es el nodo q acabaste de agregar
       list->tail->next=n;
       list->tail->next->next=NULL;
-      list->tail=list->tail->next;
+      list->tail=list->tail->prev;
       //list->current->prev=NULL; 
     }
     else{
