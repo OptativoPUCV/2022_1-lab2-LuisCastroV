@@ -99,10 +99,11 @@ void pushCurrent(List * list, void * data) {
   }
   else{
     if(list->current == list->tail){
+      //en el tail te falta actualizarlo tipo si el nodo que agregaste es después del tail, ahora el tail es el nodo q acabaste de agregar
       list->current->next=n;
       n->next=NULL;
       n->prev=list->current; 
-      list->current->prev=NULL; 
+      //list->current->prev=NULL; 
     }
     else{
       list->current->next=n;
