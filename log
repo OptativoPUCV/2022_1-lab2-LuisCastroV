@@ -382,3 +382,22 @@ Sat Mar 19 03:01:52 UTC 2022:
  tests:  9|3
 total_score: 35/70
 b356fbb
+Sat Mar 19 03:02:29 UTC 2022: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:81:10: error: ‘head’ undeclared (first use in this function); did you mean ‘fread’?
+   return(head->next->data);
+          ^~~~
+          fread
+list.c:81:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:81:9: error: ‘return’ with a value, in function returning void [-Werror]
+   return(head->next->data);
+         ^
+list.c:71:6: note: declared here
+ void pushFront(List * list, void * data) {
+      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e6894a1
