@@ -773,3 +773,9 @@ list.c:117:1: error: expected identifier or ‘(’ before ‘}’ token
  ^
 Compilation failed
 70acd1a
+Sat Mar 19 21:38:49 UTC 2022: 
+ list.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+ tests:  10|2
+total_score: 45/70
+ec722f5
