@@ -251,3 +251,9 @@ list.c:82:16: error: ‘Node {aka struct Node}’ has no member named ‘tail’
                 ^~
 Compilation failed
 82e1773
+Sat Mar 19 01:08:48 UTC 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  9|3
+total_score: 35/70
+26b8368
