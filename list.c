@@ -89,24 +89,25 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) {
   Node* n = createNode(data);
-  n->data=list->head;
   if(list->head==NULL)
   {
     list->head=n;
-    list->tail=n;
-  }
-  else{
-    if(list->tail == list->current){
-      list->tail=n;
-      list->current->next=n;
-      n->prev=list->current;
     }
-    else{
-      n->prev=list->current;
-      list->current->next=n->next;
-      n->next=list->current->next;
-      list->current->prev=n;
+  else
+  {
+    while(list->current->next!=NULL)
+      {
+        list->current=list->current->next;
+  
+      }
+    //primer conectar por derecha
+    n->next=list->current->next;
+    list->current->next=n;
+  }
+  }
 
+  
+  
       //list->current->next->prev=n;
       //n->prev=list->current;
       //list->current->next=n; 

@@ -758,3 +758,18 @@ Sat Mar 19 21:22:38 UTC 2022:
  tests:  10|2
 total_score: 45/70
 adf8320
+Sat Mar 19 21:38:35 UTC 2022: 
+ list.c | 23 ++++++++++++-----------
+ 1 file changed, 12 insertions(+), 11 deletions(-)
+In file included from test.c:5:0:
+list.c:115:5: error: expected identifier or ‘(’ before ‘}’ token
+     }
+     ^
+list.c:116:3: error: expected identifier or ‘(’ before ‘}’ token
+   }
+   ^
+list.c:117:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+Compilation failed
+70acd1a
