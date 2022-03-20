@@ -124,9 +124,10 @@ void * popCurrent(List * list){
   void* data=list->current->data;
   
   if(list->head != list->current && list->tail != list->current ){
-    list->current->next->prev=list->current->prev;
     list->current->prev->next=list->current->next;
+    list->current->next->prev=list->current->prev;
     list->current=list->current->next; 
+    free(nodoeliminado);
   }
   else{
     if(list->current==list->head)
@@ -143,7 +144,7 @@ void * popCurrent(List * list){
     }
     
   }
-  free(nodoeliminado);
+  //free(nodoeliminado);
   return data;
 }
 
