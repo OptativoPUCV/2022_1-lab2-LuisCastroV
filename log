@@ -859,3 +859,9 @@ list.c:123:9: error: unused variable ‘actual’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 71a5e01
+Sun Mar 20 18:36:36 UTC 2022: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+3f77f62

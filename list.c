@@ -120,7 +120,6 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  Node* actual;
   return NULL;
 }
 
