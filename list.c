@@ -141,7 +141,7 @@ void * popCurrent(List * list){
       list->current = list->current->prev;
       list->tail = list->current->prev;    
     }
-    free(nodoeliminado);
+    
   }
   free(nodoeliminado);
   return data;
