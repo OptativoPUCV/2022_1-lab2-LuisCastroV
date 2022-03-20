@@ -120,6 +120,30 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+  Node* actual;
+  int encontrado=0;
+  
+  actual=list->head;
+
+  while((actual!=NULL)&&(!encontrado))
+    {
+      encontrado=list->current;
+      if(!encontrado)
+      {
+        actual=actual->next;
+      }
+    if(actual!=NULL)
+    {
+      if(actual==list->head)
+    {
+      list->head=actual->next;
+      if(actual->next!=NULL)
+      {
+        actual->next->prev=NULL;
+      }
+    }
+    }
+    }
   
   return NULL;
 }

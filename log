@@ -837,3 +837,14 @@ Sat Mar 19 22:54:08 UTC 2022:
  tests:  11|1
 total_score: 55/70
 4e4115d
+Sun Mar 20 17:41:39 UTC 2022: 
+ list.c | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:130:17: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+       encontrado=list->current;
+                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+476e788
