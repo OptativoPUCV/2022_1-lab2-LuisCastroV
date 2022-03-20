@@ -848,3 +848,14 @@ list.c:130:17: error: assignment makes integer from pointer without a cast [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 476e788
+Sun Mar 20 18:36:26 UTC 2022: 
+ list.c | 24 ------------------------
+ 1 file changed, 24 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:123:9: error: unused variable ‘actual’ [-Werror=unused-variable]
+   Node* actual;
+         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+71a5e01
