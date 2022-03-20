@@ -978,3 +978,41 @@ Sun Mar 20 20:04:19 UTC 2022:
  tests:  11|1
 total_score: 55/70
 e43ad22
+Sun Mar 20 20:05:46 UTC 2022: 
+ list.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:5:0:
+list.c:123:20: error: ‘list’ undeclared here (not in a function); did you mean ‘List’?
+   Node* actualnodo=list->current;
+                    ^~~~
+                    List
+list.c:126:3: error: expected identifier or ‘(’ before ‘if’
+   if(list->current==list->head)
+   ^~
+list.c:132:3: error: expected identifier or ‘(’ before ‘else’
+   else
+   ^~~~
+list.c:138:3: error: data definition has no type or storage class [-Werror]
+   free(actualnodo);
+   ^~~~
+list.c:138:3: error: type defaults to ‘int’ in declaration of ‘free’ [-Werror=implicit-int]
+list.c:138:3: error: parameter names (without types) in function declaration [-Werror]
+list.c:138:3: error: conflicting types for ‘free’
+In file included from test.c:2:0:
+/usr/include/stdlib.h:563:13: note: previous declaration of ‘free’ was here
+ extern void free (void *__ptr) __THROW;
+             ^~~~
+In file included from test.c:5:0:
+list.c:139:3: error: expected identifier or ‘(’ before ‘return’
+   return fake;
+   ^~~~~~
+list.c:140:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+list.c: In function ‘popCurrent’:
+list.c:122:1: error: control reaches end of non-void function [-Werror=return-type]
+ void * popCurrent(List * list){}
+ ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5b36896
