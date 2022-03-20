@@ -865,3 +865,17 @@ Sun Mar 20 18:36:36 UTC 2022:
  tests:  11|1
 total_score: 55/70
 3f77f62
+Sun Mar 20 19:46:52 UTC 2022: 
+ list.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:127:9: error: unused variable ‘data’ [-Werror=unused-variable]
+   void* data=list->current->data;
+         ^~~~
+list.c:126:9: error: unused variable ‘actualnodo’ [-Werror=unused-variable]
+   Node* actualnodo=list->current;
+         ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c47e88c
