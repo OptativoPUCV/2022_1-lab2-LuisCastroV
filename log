@@ -907,3 +907,17 @@ list.c:123:9: error: unused variable ‘actualnodo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 40fb754
+Sun Mar 20 19:48:46 UTC 2022: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘popCurrent’:
+list.c:124:9: error: unused variable ‘actualnodo’ [-Werror=unused-variable]
+   Node* actualnodo=list->current;
+         ^~~~~~~~~~
+list.c:123:9: error: unused variable ‘fake’ [-Werror=unused-variable]
+   void* fake=list->current->data;
+         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9a14fe6
