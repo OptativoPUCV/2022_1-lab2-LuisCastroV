@@ -122,18 +122,25 @@ void * popBack(List * list) {
 void * popCurrent(List * list){
   Node* actualnodo=list->current;
   void* fake=list->current->data;
-
-  if(list->current==list->head)
+  
+  if(list->head==NULL)
   {
-    list->current->next->prev = NULL;
-    list->current = list->current->next;
-    list->head = list->current->next;       
+    list->head=n;
+    list->tail=n;
   }
-  else
-  {
-    list->current->prev->next = NULL;
-    list->current = list->current->prev;
-    list->tail = list->current->prev;  
+  else{
+    if(list->current==list->head)
+    {
+      list->current->next->prev = NULL;
+      list->current = list->current->next;
+      list->head = list->current->next;       
+    }
+    else
+    {
+      list->current->prev->next = NULL;
+      list->current = list->current->prev;
+      list->tail = list->current->prev;  
+    } 
   }
   free(actualnodo);
   return fake;
