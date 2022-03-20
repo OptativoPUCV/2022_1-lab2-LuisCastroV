@@ -949,3 +949,9 @@ list.c:125:9: error: unused variable ‘actualnodo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 951cb59
+Sun Mar 20 19:57:03 UTC 2022: 
+ list.c | 19 ++++++++++++++++---
+ 1 file changed, 16 insertions(+), 3 deletions(-)
+ tests:  11|1
+total_score: 55/70
+0f3e80b
