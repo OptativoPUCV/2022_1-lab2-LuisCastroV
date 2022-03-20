@@ -120,6 +120,8 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+  if (!(list && list->head && list->current))
+    return NULL;
   Node* actualnodo=list->current;
   void* fake=list->current->data;
   
