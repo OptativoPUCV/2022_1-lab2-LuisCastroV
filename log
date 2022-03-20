@@ -1033,3 +1033,9 @@ list.c:128:16: error: ‘n’ undeclared (first use in this function)
 list.c:128:16: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 d8c7a45
+Sun Mar 20 20:09:54 UTC 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  11|1
+total_score: 55/70
+348c74f
