@@ -120,8 +120,8 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list){
-  Node* actualnodo=list->current;
-  void* fake=list->current->data;
+  Node* nodoeliminado=list->current;
+  void* data=list->current->data;
   
   if(list->head==NULL)
   {
@@ -143,8 +143,8 @@ void * popCurrent(List * list){
       list->tail = list->current->prev;  
     } 
   }
-  free(actualnodo);
-  return fake;
+  free(nodoeliminado);
+  return data;
 }
 
 void cleanList(List * list) {
