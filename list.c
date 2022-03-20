@@ -124,7 +124,7 @@ void * popCurrent(List * list) {
     return NULL;
   }
   Node* actualnodo=list->current;
-  void* data=list->current->data;
+  void* fake=list->current->data;
   
   return NULL;
 }
