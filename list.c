@@ -133,13 +133,13 @@ void * popCurrent(List * list){
     {
       list->current->next->prev = NULL;
       list->current = list->current->next;
-      list->head = list->current->next;         
+      list->head = list->current;         
     }
     else
     {
       list->current->prev->next = NULL;
       list->current = list->current->prev;
-      list->tail = list->current->prev;    
+      list->tail = list->current;    
     } 
   }
   free(nodoeliminado);
